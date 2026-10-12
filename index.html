@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoLife - Environmental Awareness</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h2 class="logo">EcoLife 🌿</h2>
+
+        <nav id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#waste">Waste Management</a>
+            <a href="#quiz">Eco Quiz</a>
+        </nav>
+
+        <button type="button" id="themeToggle">Dark Mode</button>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">SAVE EARTH, SAVE LIFE</p>
+
+            <h1>Small Steps,<br>Greener Future.</h1>
+
+            <p>
+                Protect our planet by making sustainable choices.
+                Reduce pollution, save natural resources and
+                make Earth a better place for everyone.
+            </p>
+
+            <a href="#solutions" class="btn">Explore Solutions</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+                alt="Green forest and nature">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <p class="tagline">ABOUT OUR MISSION</p>
+
+        <h2>Why Protect Our Environment?</h2>
+
+        <p class="section-description">
+            The environment provides us with air, water, food
+            and other natural resources. Pollution, deforestation
+            and excessive waste harm our planet. We must work
+            together to protect nature for future generations.
+        </p>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="card-icon">🌳</div>
+                <h3>Protect Nature</h3>
+                <p>
+                    Plant trees, protect forests and respect
+                    wildlife and their natural habitats.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💧</div>
+                <h3>Save Water</h3>
+                <p>
+                    Avoid wasting water, close unused taps
+                    and use water responsibly.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">♻️</div>
+                <h3>Reduce Pollution</h3>
+                <p>
+                    Reduce unnecessary waste and dispose of
+                    rubbish in the correct bins.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section solutions" id="solutions">
+        <p class="tagline">MAKE A DIFFERENCE</p>
+
+        <h2>Simple Eco-Friendly Practices</h2>
+
+        <div class="card-container">
+
+            <div class="solution-card">
+                <img
+                    src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=80"
+                    alt="Green plants">
+
+                <div class="solution-content">
+                    <h3>Plant More Trees</h3>
+                    <p>
+                        Trees absorb carbon dioxide, provide shade
+                        and support wildlife.
+                    </p>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <img
+                    src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=700&q=80"
+                    alt="Waste recycling">
+
+                <div class="solution-content">
+                    <h3>Recycle Waste</h3>
+                    <p>
+                        Separate recyclable materials and reuse
+                        products whenever possible.
+                    </p>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <img
+                    src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=700&q=80"
+                    alt="Green natural landscape">
+
+                <div class="solution-content">
+                    <h3>Save Energy</h3>
+                    <p>
+                        Switch off unused lights and appliances
+                        to conserve electricity.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Waste Management Section -->
+    <section class="section waste-section" id="waste">
+        <p class="tagline">MANAGE WASTE RESPONSIBLY</p>
+
+        <h2>Know Your Waste</h2>
+
+        <p class="section-description">
+            Select a category to learn how to manage different
+            types of waste responsibly.
+        </p>
+
+        <div class="waste-container">
+
+            <button type="button" id="wetWaste" class="waste-card">
+                <span>🍂</span>
+                <h3>Wet Waste</h3>
+                <p>Food scraps, fruit peels and vegetable waste.</p>
+                <strong>View Tips →</strong>
+            </button>
+
+            <button type="button" id="dryWaste" class="waste-card">
+                <span>📦</span>
+                <h3>Dry Waste</h3>
+                <p>Paper, cardboard and suitable recyclable items.</p>
+                <strong>View Tips →</strong>
+            </button>
+
+            <button type="button" id="eWaste" class="waste-card">
+                <span>🔋</span>
+                <h3>E-Waste</h3>
+                <p>Old batteries, phones and electronic devices.</p>
+                <strong>View Tips →</strong>
+            </button>
+
+        </div>
+
+        <div class="result-box">
+            <h3>Waste Management Tips</h3>
+            <p id="wasteResult">
+                Click any waste category above to see helpful tips.
+            </p>
+        </div>
+    </section>
+
+    <!-- Environmental Quiz -->
+    <section class="section quiz-section" id="quiz">
+        <p class="tagline">TEST YOUR KNOWLEDGE</p>
+
+        <h2>Environmental Awareness Quiz</h2>
+
+        <div class="quiz-box">
+            <form id="quizForm">
+
+                <label for="answer">
+                    What should you do to reduce waste?
+                </label>
+
+                <select id="answer" required>
+                    <option value="">Select your answer</option>
+                    <option value="reduce">Reduce and reuse products</option>
+                    <option value="burn">Burn all waste</option>
+                    <option value="litter">Throw waste on roads</option>
+                </select>
+
+                <button type="submit" class="btn">
+                    Check Answer
+                </button>
+
+            </form>
+
+            <h3 id="quizResult"></h3>
+        </div>
+    </section>
+
+    <!-- Eco-Friendly Activity Form -->
+    <section class="section activity-section" id="activity">
+        <p class="tagline">TAKE ACTION TODAY</p>
+
+        <h2>My Green Activity</h2>
+
+        <p class="section-description">
+            Choose an eco-friendly activity that you want
+            to practise in your daily life.
+        </p>
+
+        <div class="activity-box">
+            <form id="activityForm">
+
+                <label for="activity">Choose your activity:</label>
+
+                <select id="activity" required>
+                    <option value="">Select an activity</option>
+                    <option value="Planting Trees">Planting Trees</option>
+                    <option value="Saving Water">Saving Water</option>
+                    <option value="Recycling Waste">Recycling Waste</option>
+                    <option value="Saving Electricity">Saving Electricity</option>
+                    <option value="Avoiding Plastic">Avoiding Plastic</option>
+                </select>
+
+                <button type="submit" class="btn">
+                    Submit Activity
+                </button>
+
+            </form>
+
+            <h3 id="activityResult"></h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>EcoLife 🌿</h2>
+
+        <p>
+            Protect Nature Today for a Better Tomorrow.
+        </p>
+
+        <p>
+            © <span id="year"></span> EcoLife | Environmental Awareness Project
+        </p>
+
+        <a href="#home">Back to Top ↑</a>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
